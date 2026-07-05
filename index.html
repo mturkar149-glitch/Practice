@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pranshu Dancing Cartoon</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    color:white;
+    margin-bottom:30px;
+    font-size:40px;
+}
+
+.character{
+    animation:dance 0.5s infinite alternate;
+}
+
+.head{
+    width:120px;
+    height:120px;
+    background:#ffd8a8;
+    border-radius:50%;
+    margin:auto;
+    position:relative;
+}
+
+.eye{
+    width:15px;
+    height:15px;
+    background:black;
+    border-radius:50%;
+    position:absolute;
+    top:40px;
+}
+
+.left{left:30px;}
+.right{right:30px;}
+
+.mouth{
+    width:40px;
+    height:20px;
+    border-bottom:4px solid black;
+    border-radius:50%;
+    position:absolute;
+    left:40px;
+    bottom:25px;
+}
+
+.body{
+    width:90px;
+    height:120px;
+    background:#ff4d4d;
+    margin:auto;
+    position:relative;
+    border-radius:10px;
+}
+
+.arm{
+    width:18px;
+    height:80px;
+    background:#ffd8a8;
+    position:absolute;
+    top:10px;
+    border-radius:10px;
+    transform-origin:top;
+}
+
+.left-arm{
+    left:-18px;
+    animation:leftArm .5s infinite alternate;
+}
+
+.right-arm{
+    right:-18px;
+    animation:rightArm .5s infinite alternate;
+}
+
+.legs{
+    position:absolute;
+    bottom:-70px;
+    width:100%;
+}
+
+.leg{
+    width:18px;
+    height:70px;
+    background:#4d79ff;
+    position:absolute;
+    border-radius:10px;
+    transform-origin:top;
+}
+
+.left-leg{
+    left:20px;
+    animation:leftLeg .5s infinite alternate;
+}
+
+.right-leg{
+    right:20px;
+    animation:rightLeg .5s infinite alternate;
+}
+
+.name{
+    margin-top:90px;
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+@keyframes dance{
+    from{transform:rotate(-5deg);}
+    to{transform:rotate(5deg);}
+}
+
+@keyframes leftArm{
+    from{transform:rotate(30deg);}
+    to{transform:rotate(-40deg);}
+}
+
+@keyframes rightArm{
+    from{transform:rotate(-30deg);}
+    to{transform:rotate(40deg);}
+}
+
+@keyframes leftLeg{
+    from{transform:rotate(20deg);}
+    to{transform:rotate(-20deg);}
+}
+
+@keyframes rightLeg{
+    from{transform:rotate(-20deg);}
+    to{transform:rotate(20deg);}
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🕺 Pranshu Dancing Cartoon</h1>
+
+<div class="character">
+
+    <div class="head">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+    </div>
+
+    <div class="body">
+        <div class="arm left-arm"></div>
+        <div class="arm right-arm"></div>
+
+        <div class="legs">
+            <div class="leg left-leg"></div>
+            <div class="leg right-leg"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="name">💃 PRANSHU 💃</div>
+
+</div>
+
+</body>
+</html>
